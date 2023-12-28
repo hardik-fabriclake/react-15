@@ -21,5 +21,14 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-scripts": "4.4.0",
+    "web-vitals": "^2.1.4"
+  }
 }
