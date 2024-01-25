@@ -1,39 +1,34 @@
-.App {
-  text-align: center;
-}
+Ticket Title: Create Unit Tests for CSS Properties 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  animation: App-logo-spin infinite 20s linear;
-}
+Ticket Description: 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+As part of our continuous integration and quality assurance process, we would like to add test cases for the existing CSS properties in our `src/App.css` file to ensure that all styles are rendering as expected. 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+The following tests should be written:
 
-.App-link {
-  color: #61dafb;
-}
+1. App Component:
+- Check if App component has `text-align` set to `center`.
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+2. App-logo Component:
+- Check if `App-logo` component has `height` set to `40vmin`.
+- Confirm `pointer-events` is set to `none`.
+- Verify the animation name and duration used in `App-logo`. It should be `App-logo-spin`, `infinite`, `20s`, `linear`.
+
+3. Media Query (@media):
+- Verify if the media query `(prefers-reduced-motion: no-preference)` is used and if `animation` within it is the same as in the App-logo.
+
+4. App-header Component:
+- Test if `App-header` background-color is `#282c34`.
+- Check if `min-height` is `100vh`.
+- Verify `display`, `flex-direction`, `align-items`, `justify-content`, `font-size`, and `color` properties match with the existing CSS.
+
+5. App-link Component:
+- Confirm if `color` is set to `#61dafb`.
+
+6. App-logo-spin Keyframes Animation:
+- Validate the `from` and `to` transform properties of `@keyframes App-logo-spin` are correct.
+
+Note: Each test should be written as a separate function and should output a clear message whether the test has passed or failed. This will greatly help developers to identify any undesired changes in the CSS during future development cycles.
+
+Estimated Time for completion: 2-3 hours
+Required Resources: Jest CSS Testing Library, Documentation, Experienced developer with testing knowledge.

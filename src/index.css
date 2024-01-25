@@ -1,34 +1,32 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+Ticket title: Write test cases for CSS properties
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+Ticket description:
 
-/* React update 17.0.2 */
-body.React {
-  margin: 10px;
-  background-color: #ffffff;
-}
+As our project involves frequent UI changes, we need to ensure that our core stylesheet properties are always maintained. This ticket involves writing test cases for the "src/index.css" file targeting the "body" and "code" CSS selectors, as well as checking for the existence and correctness of imported dependencies. 
 
-code.React {
-  font-size: 12px;
-}
+Tasks:
 
-/* New dependencies and versions */
-.dependencies {
-  "@testing-library/jest-dom": "^5.17.0",
-  "@testing-library/react": "^13.4.0",
-  "@testing-library/user-event": "^13.5.0",
-  "react": "^17.0.2",
-  "react-dom": "^17.0.2",
-  "react-scripts": "1.0.14",
-  "web-vitals": "^2.1.4"
-}
+1. Write a test case for the "body" selector.
+- Should check if the margin is set to 0 and 10px for '.React'.
+- Should verify the font-family.
+- Should check -webkit-font-smoothing and -moz-osx-font-smoothing values.
+
+2. Write a test case for the "code" selector.
+- Should verify the font-family.
+- Should verify 'font-size' is set to '12px' for '.React'.
+
+3. Write a test case for the ".dependencies" selector.
+- Should verify that each dependency and its version exists.
+
+Note: For task #3, please make sure to write separate test sub-cases for each of the dependencies to easily identify the missing or incorrectly versioned dependencies.
+
+Time estimation: 4 hours
+
+Acceptance Criteria:
+
+- Each test case must pass with the current CSS properties.
+- If a test case fails due to a CSS property different than expected, it must be identified and fixed.
+- The code should be easy to understand and maintain in the future.
+- Upon code review, test cases must cover all the areas mentioned above.
+
+Please remember to update this ticket as progress is made, and to ask for any clarification or help if needed.
