@@ -3,13 +3,12 @@ import '@testing-library/react';
 import '@testing-library/user-event';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { act } from 'react-dom/test-utils';
 import { render } from '@testing-library/react';
 import App from './App';
 
-// Set up React 17 adapter
+// Set up React 16 adapter
 import { configure } from 'enzyme';
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
+import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
 
