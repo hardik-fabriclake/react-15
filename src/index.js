@@ -7,6 +7,8 @@ import App from './App'; // Assuming your main component is in a file named App.
 
 // Render the main component into the root DOM element
 ReactDOM.render(
-    <App />,
-  document.getElementById('root')
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    document.getElementById('root')
 );
