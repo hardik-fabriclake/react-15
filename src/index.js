@@ -7,6 +7,6 @@ import App from './App'; // Assuming your main component is in a file named App.
 
 // Render the main component into the root DOM element
 ReactDOM.render(
-    <App />,
+  <App />,
   document.getElementById('root')
 );
